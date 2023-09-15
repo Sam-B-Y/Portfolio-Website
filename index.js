@@ -70,6 +70,9 @@ let transporter = nodemailer.createTransport({
 app.post("/", jsonParser, (request, response) => {
   console.log(request.body);
   const { fullname, email, title, message } = request.body;
+  if(!fullname || !email || !title || !message) {
+    return;
+  }
   const mailData = {
     from: process.env.user,
     to: process.env.user,
