@@ -57,8 +57,51 @@
         </button>
       </div>
       <div class="modal-body">
-        Built the organization’s <a href="https://koh-ed.org" target="_blank">website</a> and a platform to facilitate HR management. 
+        <b>Head of Finance, IT, and Marketing</b> from Jul. 2021 - May 2023.
+        <br>Built the organization’s <a href="https://koh-ed.org" target="_blank">website</a> and a platform to facilitate HR management using JavaScript. 
         <br>Led 4 teams (15+ people) to manage budgets, fundraise over $3500, and make science education accessible to +1000 students in Ghana, Kenya, and France.          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a class="btn btn-primary" href="https://koh-ed.org" target="_blank" role="button">Website Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="f1guess" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">F1 Guess: a Fantasy Sports Formula 1 Game</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="https://f1guess.com">F1 Guess</a> is a web application built using Node.js, Express, and MongoDB. It currently has over 650 users.
+        Utilized Machine Learning in order to generate a function giving a boost to lower ranked players in order to achieve a higher retention rate.
+        Used Web Analytics Tools such as Google Analytics and Hotjar to analyze user behavior and improve UX and UI design.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a class="btn btn-primary" href="https://f1guess.com" target="_blank" role="button">App Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Koh-Ed</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Personal portfolio website made using Node.js, Express and EJS. 
+          <br>Used to display my skills and personal projects as well as an introduction to myself.
+          <br>Serves as a way to contact me and to view my CV.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -97,6 +140,11 @@
             </a>
           </li>
           <li>
+            <a class="scroll-to" href="#portfolio">
+              <i class="las la-grip-vertical"></i> <span>Projects</span>
+            </a>
+          </li>
+          <li>
             <a class="scroll-to" href="#resume">
               <i class="las la-briefcase"></i> <span>Education</span>
             </a>
@@ -109,11 +157,6 @@
           <li>
             <a class="scroll-to" href="#skills">
               <i class="las la-shapes"></i> <span>Skills</span>
-            </a>
-          </li>
-          <li>
-            <a class="scroll-to" href="#portfolio">
-              <i class="las la-grip-vertical"></i> <span>Projects</span>
             </a>
           </li>
           <li>
@@ -156,6 +199,11 @@
       </a>
     </li>
     <li>
+      <a class="scroll-to" href="#portfolio">
+        <span>Projects</span> <i class="las la-grip-vertical"></i>
+      </a>
+    </li>
+    <li>
       <a class="scroll-to" href="#resume">
         <span>Education</span> <i class="las la-briefcase"></i>
       </a>
@@ -168,11 +216,6 @@
     <li>
       <a class="scroll-to" href="#skills">
         <span>Skills</span> <i class="las la-shapes"></i>
-      </a>
-    </li>
-    <li>
-      <a class="scroll-to" href="#portfolio">
-        <span>Projects</span> <i class="las la-grip-vertical"></i>
       </a>
     </li>
     <li>
@@ -285,31 +328,6 @@
                 music (the Piano), watching and playing football (soccer), and
                 aerospace (flying planes).
               </p>
-              <div class="card-container">
-                <div class="card">
-                  <img class="cardpic" src="./images/me.webp" alt="Me" />
-                  <p class="title">Saint Malo</p>
-                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
-                </div>
-                <div class="card">
-                  <img class="cardpic" src="./images/album/suit.webp" alt="Me" />
-                  <p class="title">2023 Prom
-                  </p>
-                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
-                </div>
-
-                <div class="card">
-                  <img class="cardpic" src="./images/album/piano.webp" alt="Me" />
-                  <p class="title">Piano</p>
-                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
-                </div>
-
-                <div class="card">
-                  <img class="cardpic" src="./images/album/duke.webp" alt="Me" />
-                  <p class="title">Duke University</p>
-                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
-                </div>
-              </div>
 
               <div class="section-header">
                 <h1 class="scroll-animation" data-animation="fade_from_bottom">
@@ -427,6 +445,45 @@
 
             </div>
             
+          </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+          <div class="custom-container">
+            <div class="portfolio-content content-width">
+              <div class="section-header">
+                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                  <i class="las la-grip-vertical"></i> Projects
+                </h4>
+                <h1 class="scroll-animation" data-animation="fade_from_bottom">
+                  Featured <span>Projects</span>
+                </h1>
+              </div>
+
+
+              <div class="card-container" >
+                <div class="card" data-toggle="modal" data-target="#portfolioModal">
+                  <img class="cardpic" src="./images/favicon.webp" alt="Me" />
+                  <p class="title">Portfolio</p>
+                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
+                </div>
+                <div class="card" data-toggle="modal" data-target="#kohEd">
+                  <img class="cardpic" src="./images/projects/kohed.webp" alt="Me" />
+                  <p class="title">Koh-Ed</p>
+                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
+                </div>
+
+                <div class="card" data-toggle="modal" data-target="#f1guess">
+                  <img class="cardpic" src="./images/projects/f1guess.webp" alt="Me" />
+                  <p class="title">F1 Guess
+                  </p>
+                  <img class="cardlike" src="./images/music/like.webp" alt="like" />
+                </div>
+
+                
+              </div>
+            </div>
           </div>
         </section>
 
@@ -622,115 +679,7 @@
           </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section class="portfolio-area page-section scroll-to-page" id="portfolio">
-          <div class="custom-container">
-            <div class="portfolio-content content-width">
-              <div class="section-header">
-                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                  <i class="las la-grip-vertical"></i> portfolio
-                </h4>
-                <h1 class="scroll-animation" data-animation="fade_from_bottom">
-                  Featured <span>Projects</span>
-                </h1>
-              </div>
-
-              <div class="row portfolio-items">
-                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                  <div class="portfolio-item portfolio-full">
-                    <div class="portfolio-item-inner">
-                      <a href="./images/projects/kohed.webp" data-lightbox="example-1">
-                        <img src="./images/projects/kohed.webp" alt="Portfolio" />
-                      </a>
-
-                      <ul class="portfolio-categories">
-                        <li>
-                          <a href="javascript:void(0);">Website Development</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">SEO Optimization</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Front-End Design</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h2>
-                      <a data-toggle="modal" data-target="#kohEd" href="">Koh-Ed: Non Profit Organization Run by Students, for
-                        Students</a>
-                      </button>
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
-                  <div class="portfolio-item portfolio-half">
-                    <div class="portfolio-item-inner">
-                      <a href="./images/favicon.webp" data-lightbox="example-1">
-                        <img src="./images/favicon.webp" alt="Portfolio" />
-                      </a>
-
-                      <img src="./images/favicon.webp" alt="Portfolio" />
-
-                      <ul class="portfolio-categories">
-                        <li>
-                          <a href="">Node.js</a>
-                        </li>
-                        <li>
-                          <a href="">HTML/CSS/JS</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h2><a href="javascript:void(0);">Portfolio Website</a></h2>
-                  </div>
-                </div>
-
-                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
-                  <div class="portfolio-item portfolio-half">
-                    <div class="portfolio-item-inner">
-                      <a href="./images/portfolio3.webp" data-lightbox="example-1">
-                        <img src="./images/portfolio3.webp" alt="Portfolio" />
-                      </a>
-
-                      <ul class="portfolio-categories">
-                        <li>
-                          <a href="">Figma</a>
-                        </li>
-                        <li>
-                          <a href="">Webflow</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h2><a href="">Taskly Dashboard</a></h2>
-                  </div>
-                </div>
-
-                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                  <div class="portfolio-item portfolio-half">
-                    <div class="portfolio-item-inner">
-                      <a href="./images/projects/f1guess.webp" data-lightbox="example-1">
-                        <img src="./images/projects/f1guess.webp" alt="portfolio" />
-                      </a>
-
-                      <ul class="portfolio-categories">
-                        <li>
-                          <a href="">Node.js</a>
-                        </li>
-                        <li>
-                          <a href="">HTML/CSS/JS</a>
-                        </li>
-                        <li>
-                          <a href="">Web/SEO Analytics</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h2><a href="https://f1guess.com">F1 Guess: a Formula 1 Fantasy Game</a></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <!-- Contact Section -->
         <section class="contact-area page-section scroll-to-page" id="contact">
@@ -851,3 +800,34 @@
 </body>
 
 </html>
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+server_name samuelorellanamateo.com;
+
+        location / {
+                proxy_pass http://localhost:10101;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+}
+
+server {
+  listen 80 ;
+  listen [::]:80 ;
+server_name samuelorellanamateo.com;
+
+        location / {
+                proxy_pass http://localhost:10101;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+}
