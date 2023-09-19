@@ -334,7 +334,7 @@
                   Languages
                 </h1>
               </div>
-              <div class="mixer">
+              <div class="row"><div class="mixer">
                 <div class="channel">
                   <p>English</p>
                   <img class="sliderimg" src="./images/english.webp" alt="like" />
@@ -441,7 +441,8 @@
                   </ul>
                   <input class="slider" value="40" type="range" />
                 </div>
-              </div>
+              </div></div>
+              
 
             </div>
             
@@ -800,34 +801,3 @@
 </body>
 
 </html>
-server {
-  listen 80 default_server;
-  listen [::]:80 default_server;
-server_name samuelorellanamateo.com;
-
-        location / {
-                proxy_pass http://localhost:10101;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection 'upgrade';
-                proxy_set_header Host $host;
-                proxy_cache_bypass $http_upgrade;
-        }
-
-}
-
-server {
-  listen 80 ;
-  listen [::]:80 ;
-server_name samuelorellanamateo.com;
-
-        location / {
-                proxy_pass http://localhost:10101;
-                proxy_http_version 1.1;
-                proxy_set_header Upgrade $http_upgrade;
-                proxy_set_header Connection 'upgrade';
-                proxy_set_header Host $host;
-                proxy_cache_bypass $http_upgrade;
-        }
-
-}
