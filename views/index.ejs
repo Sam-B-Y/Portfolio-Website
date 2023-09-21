@@ -101,7 +101,7 @@
       <div class="modal-body">
           Personal portfolio website made using Node.js, Express and EJS. 
           <br>Used to display my skills and personal projects as well as an introduction to myself.
-          <br>Serves as a way to contact me and to view my CV.
+          <br>Serves as a way to contact me and to view my Resume.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -174,9 +174,6 @@
             <a href="https://www.linkedin.com/in/borremanssam/" target="_blank"><i class="lab la-linkedin"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/brmns.sam/" target="_blank"><i class="lab la-instagram"></i></a>
-          </li>
-          <li>
             <a href="#contact"><i class="las la-envelope"></i></a>
           </li>
           <li>
@@ -237,23 +234,22 @@
         <a href="https://www.linkedin.com/in/borremanssam/" target="_blank"><i class="lab la-linkedin"></i></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/brmns.sam/" target="_blank"><i class="lab la-instagram"></i></a>
-      </li>
-      <li>
         <a href="#contact"><i class="las la-envelope"></i></a>
       </li>
       <li>
         <a href="https://github.com/Sam-B-Y" target="_blank"><i class="lab la-github"></i></a>
       </li>
     </ul>
-    <a href="./files/CV.pdf" target="_blank" class="theme-btn">
-      <i class="las la-envelope"></i> Read my CV
+    <a href="./files/Resume.pdf" target="_blank" class="theme-btn">
+      <i class="las la-file"></i> My Resume 
     </a>
-    <img class="spotcontrols" src="./images/music/random.webp" />
-    <img class="spotcontrols pointerMouse" src="./images/music/prev.webp" onclick="track('prev')"/>
-    <img class="spotcontrols pointerMouse" src="./images/music/play.webp" id="musicControls" onclick="track('start')"/>
-    <img class="spotcontrols pointerMouse" src="./images/music/next.webp" onclick="track('next')"/>
-    <img class="spotcontrols" src="./images/music/loop.webp"/>
+    <div class="songControlDiv">
+    <img class="songControls" src="./images/music/random.webp" />
+    <img class="songControls pointerMouse" src="./images/music/prev.webp" onclick="track('prev')"/>
+    <img class="songControls pointerMouse" src="./images/music/play.webp" id="musicControls" onclick="track('start')"/>
+    <img class="songControls pointerMouse" src="./images/music/next.webp" onclick="track('next')"/>
+    <img class="songControls" src="./images/music/loop.webp"/>
+  </div>
     <div id="progress-bar"></div>
     <div id="circle"></div>
   </div>
@@ -273,17 +269,14 @@
               <a href="https://www.linkedin.com/in/borremanssam/" target="_blank"><i class="lab la-linkedin"></i></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/brmns.sam/" target="_blank"><i class="lab la-instagram"></i></a>
-            </li>
-            <li>
               <a href="#contact"><i class="las la-envelope"></i></a>
             </li>
             <li>
               <a href="https://github.com/Sam-B-Y" target="_blank"><i class="lab la-github"></i></a>
             </li>
           </ul>
-          <a href="#" class="theme-btn">
-            <i class="las la-envelope"></i> Contact Me
+          <a href="./files/Resume.pdf" target="_blank" class="theme-btn">
+            <i class="las la-file"></i> My Resume 
           </a>
         </div>
 
@@ -329,15 +322,16 @@
                 aerospace (flying planes).
               </p>
 
+              <div id="languages">
               <div class="section-header">
                 <h1 class="scroll-animation" data-animation="fade_from_bottom">
                   Languages
                 </h1>
               </div>
-              <div class="row"><div class="mixer">
+              <div class="row justify-content-center"><div class="mixer">
                 <div class="channel">
                   <p>English</p>
-                  <img class="sliderimg" src="./images/english.webp" alt="like" />
+                  <img class="sliderimg" src="./images/languages/english.webp" alt="like" />
                   <ul>
                     <li></li>
                     <li></li>
@@ -359,7 +353,7 @@
             
                 <div class="channel">
                   <p>French</p>
-                  <img class="sliderimg" src="./images/french.webp" alt="like" />
+                  <img class="sliderimg" src="./images/languages/french.webp" alt="like" />
                   <ul>
                     <li></li>
                     <li></li>
@@ -380,7 +374,7 @@
                 </div>
                 <div class="channel">
                   <p>Japanese</p>
-                  <img class="sliderimg" src="./images/japan.webp" alt="like" />
+                  <img class="sliderimg" src="./images/languages/japan.webp" alt="like" />
                   <ul>
                     <li></li>
                     <li></li>
@@ -397,11 +391,11 @@
                     <li></li>
                     <li></li>
                   </ul>
-                  <input class="slider" value="90" type="range" />
+                  <input class="slider" value="80" type="range" />
                 </div>
                 <div class="channel">
                   <p>Dutch; Flemish</p>
-                  <img class="sliderimg" src="./images/flemish.webp" alt="like" />
+                  <img class="sliderimg" src="./images/languages/flemish.webp" alt="like" />
                   <ul>
                     <li></li>
                     <li></li>
@@ -422,7 +416,7 @@
                 </div>
                 <div class="channel">
                   <p>German</p>
-                  <img class="sliderimg" src="./images/german.webp" alt="like" />
+                  <img class="sliderimg" src="./images/languages/german.webp" alt="like" />
                   <ul>
                     <li></li>
                     <li></li>
@@ -441,7 +435,11 @@
                   </ul>
                   <input class="slider" value="40" type="range" />
                 </div>
-              </div></div>
+              </div>
+            </div>
+            
+            
+            </div>
               
 
             </div>

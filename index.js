@@ -50,6 +50,18 @@ app.get("/", (request, response) => {
   return response.render("index.ejs", {});
 });
 
+app.get("/kohed", (request, response) => {
+  return response.render("kohed.ejs", {});
+});
+
+app.get("/f1guess", (request, response) => {
+  return response.render("f1guess.ejs", {});
+});
+
+app.get("/test", (request, response) => {
+  return response.render("test.ejs", {});
+});
+
 app.get("*", (request, response) => {
   return response.redirect("/");
 });
