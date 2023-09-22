@@ -740,11 +740,18 @@ section {
 
 @media (max-width: 767px) {
   .jumbotron h1 {
-    font-size: 6rem; }
+    font-size: 5rem; }
   .grid-item {
     width: 100%; }
   .progress {
     height: 30px;
     font-size: 16px; } }
+
+
+@media(max-height: 1000px){
+  #appls{
+    padding-bottom: 300px;
+  }
+}
 
 /*=====  End of RESPONSIVE  ======*/
