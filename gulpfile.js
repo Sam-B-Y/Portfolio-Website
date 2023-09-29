@@ -2,11 +2,14 @@ const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 const cleanCss = require("gulp-clean-css");
 const webp = require('gulp-webp');
+var htmlmin = require('gulp-htmlmin');
 const gulp = require("gulp");
 const sass = require('gulp-sass')(require('node-sass'));
 
 var jsFiles = "assets/js/**/*.js",
   jsDest = "static/js",
+  htmlFiles = "templates/**/*.ejs",
+  htmlDest = "views",
   sassFiles = "assets/sass/style.scss",
   sassDest = "assets/css",
   cssFiles = "assets/css/**/*.css",
@@ -37,6 +40,13 @@ gulp.task("css", function () {
     .pipe(gulp.dest(cssDest));
 });
 
+gulp.task("html", function () {
+  return gulp
+    .src(htmlFiles)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest(htmlDest));
+});
+
 gulp.task("webp", function () {
   return gulp
     .src(imagesFiles)
@@ -49,9 +59,10 @@ gulp.task('watch', function (done) {
   gulp.watch(sassFiles, gulp.series('sass'));
   gulp.watch(cssFiles, gulp.series('css'));
   gulp.watch(imagesFiles, gulp.series('webp'));
+  gulp.watch(htmlFiles, gulp.series('html'));
   done();
 });
 
 
 
-gulp.task('default', gulp.series('js', 'sass', 'css', 'webp', 'watch'));
+gulp.task('default', gulp.series('js', 'sass', 'html', 'css', 'webp', 'watch'));
