@@ -8,6 +8,16 @@ const http = require('http');
 const fs = require("fs");
 var bodyParser = require("body-parser");
 var jsonParser = bodyParser.json();
+const setRateLimit = require("express-rate-limit");
+
+const rateLimitMiddleware = setRateLimit({
+  windowMs: 60 * 1000,
+  max: 5,
+  message: "You are being rate limited.",
+  headers: true,
+});
+
+
 app.set("view engine", "ejs");
 app.set("view engine", "ejs");
 app.disable("x-powered-by");
@@ -79,10 +89,10 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/", jsonParser, (request, response) => {
+app.post("/", jsonParser, rateLimitMiddleware, (request, response) => {
   console.log(request.body);
   const { fullname, email, title, message } = request.body;
-  if(!fullname || !email || !message) {
+  if (!fullname || !email || !message) {
     return;
   }
   const mailData = {
