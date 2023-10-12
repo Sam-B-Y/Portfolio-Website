@@ -7,7 +7,6 @@ const https = require('https');
 const http = require('http');
 const fs = require("fs");
 var bodyParser = require("body-parser");
-var jsonParser = bodyParser.json();
 const setRateLimit = require("express-rate-limit");
 
 const rateLimitMiddleware = setRateLimit({
@@ -89,7 +88,7 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/", jsonParser, rateLimitMiddleware, (request, response) => {
+app.post("/", rateLimitMiddleware, (request, response) => {
   console.log(request.body);
   const { fullname, email, title, message } = request.body;
   if (!fullname || !email || !message) {
