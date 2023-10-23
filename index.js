@@ -43,7 +43,7 @@ app.use(
 );
 
 
-var httpServer = http.createServer({}, app).listen(81, function () {
+var httpServer = http.createServer({}, app).listen(80, function () {
 });
 
 if (!dev) {
@@ -58,11 +58,6 @@ if (!dev) {
 app.get("/", (request, response) => {
   return response.render("index.ejs", {});
 });
-
-app.get("/kohed", (request, response) => {
-  return response.render("kohed.ejs", {});
-});
-
 app.get("/f1guess", (request, response) => {
   return response.render("f1guess.ejs", {});
 });
